@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-
+{% extends 'base.html'%}
+{% block content%}
 <h1>Hello {{favourite_pizza}}</h1>
 <h2> {% for toppings in favourite_pizza %}</h2>
     {{toppings}}</br>
     {% endfor %}
 
 <h1>{{favourite_pizza[2]}}</h1>
+{% endblock%}
 </body>
 </html>
